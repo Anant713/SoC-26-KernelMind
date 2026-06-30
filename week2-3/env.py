@@ -128,10 +128,7 @@ class ProbeEnv:
             p=probabilities
         )
 
-    # ==============================================================
     # Reward Function
-    # ==============================================================
-
     def compute_reward(self, previous_altitude, action):
 
         reward = 0.0

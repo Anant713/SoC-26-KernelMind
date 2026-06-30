@@ -128,7 +128,7 @@ plt.title("Moving Average Episode Reward")
 plt.xlabel("Episode")
 plt.ylabel("Reward")
 plt.grid(True)
-
+plt.savefig("reward_curve.png")
 
 # Plot Landing Success Rate
 
@@ -143,7 +143,7 @@ plt.title("Landing Success Rate")
 plt.xlabel("Episode")
 plt.ylabel("Success")
 plt.grid(True)
-
+plt.savefig("success_curve.png")
 
 # Plot Episode Length
 length_curve = moving_average(
@@ -157,6 +157,7 @@ plt.title("Episode Length")
 plt.xlabel("Episode")
 plt.ylabel("Steps")
 plt.grid(True)
+plt.savefig("length_curve.png")
 
 # Plot Epsilon Decay
 plt.figure(figsize=(10,5))
@@ -165,6 +166,6 @@ plt.title("Exploration Rate")
 plt.xlabel("Episode")
 plt.ylabel("Epsilon")
 plt.grid(True)
-
+plt.savefig("epsilon_decay.png")
 
 plt.show()
